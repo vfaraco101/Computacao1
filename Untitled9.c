@@ -6,7 +6,7 @@ int main(){
 
 
     printf("Codigo: %d \n");
-    printf("Idad:%d \nPeso:%f \nAltua:%f\n", idade, peso, alt);
+    printf("Idad:%d \nPeso:%f \nAltura:%f\n", idade, peso, alt);
     printf("Taxa: %f", taxa);
 
     scanf("%d", &codigo);
