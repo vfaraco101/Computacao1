@@ -13,7 +13,7 @@ int main(){
     printf("Digite a taxa:\n");
     scanf("%f", &taxa);
 
-    printf("Codigo: %d \n");
+    printf("Codigo: %d \n", codigo);
     printf("Idade:%d \nPeso:%f \nAltura:%f\n", idade, peso, alt);
     printf("Taxa: %f", taxa);
 
