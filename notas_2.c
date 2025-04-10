@@ -19,7 +19,7 @@ int main()
     {
         printf("O estudante foi aprovado direto pois teve media %.1f e frequencia %d%%\n", media, frequencia);
     }
-    else if (media >=4 && media <=6 && frequencia >= 75)
+    else if (media >=4 && media <=6 && frequencia >= 75 || media >=6 && frequencia < 75 || media >= 4 && frequencia > 50 && frequencia < 75)
     {
         printf("O estudante vai para final pois teve media %.1f e frequencia %d%%\n", media, frequencia);
     }
