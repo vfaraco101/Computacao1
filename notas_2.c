@@ -2,7 +2,7 @@
 int main()
 {
     float n1, n2, n3, media;
-    int frequencia, ad;
+    int frequencia;
 
     printf("Digite a nota 1, 2 e 3:\n");
     scanf("%f %f %f", &n1, &n2, &n3);
