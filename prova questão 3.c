@@ -12,7 +12,7 @@ int main()
     {
         printf("Dano criico massivo!");
     }
-    else if (dano >= 1000 && dano<= 5000)
+    else if (dano >= 1000)
     {
         printf("dano critico!");
     }
