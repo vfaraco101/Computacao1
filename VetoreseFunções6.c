@@ -16,7 +16,6 @@ void ordemDireto(int v[], int n) {
     printf("\n");
 }
 
-
 void ordemInversa(int v[], int n) {
     printf("Ordem inversa:\n");
     for (int i = n - 1; i >= 0; i--) {
