@@ -22,7 +22,7 @@ void Pascal(int n) {
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             if (j <= i)
-                printf("%2d ", mat[i][j]);
+                printf("%4d ", mat[i][j]);
         }
         printf("\n");
     }
