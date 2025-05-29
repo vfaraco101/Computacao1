@@ -30,7 +30,7 @@ void Pascal(int n)
         for (int j = 0; j < n; j++)
         {
             if (j <= i)
-                printf("%4d ", mat[i][j]);
+                printf("%3d ", mat[i][j]);
             else
                 printf(" ");
         }
