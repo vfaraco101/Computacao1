@@ -11,9 +11,9 @@ srand(time(NULL));
 }
 
 int main() {
-    int vetor[10];
-    int tamanho = 10;
-    int limite = 50;
+    int vetor[5];
+    int tamanho = 5;
+    int limite = 100;
 
     preencheVetor(vetor, tamanho, limite);
 
