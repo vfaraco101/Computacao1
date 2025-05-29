@@ -10,7 +10,7 @@ srand(time(NULL));
     }
 }
 
-void imprimeDireto(int v[], int n) {
+void ordemDireto(int v[], int n) {
     printf("Ordem direta:\n");
     for (int i = 0; i < n; i++) {
         printf("%d ", v[i]);
@@ -19,7 +19,7 @@ void imprimeDireto(int v[], int n) {
 }
 
 
-void imprimeInverso(int v[], int n) {
+void ordemInversa(int v[], int n) {
     printf("Ordem inversa:\n");
     for (int i = n - 1; i >= 0; i--) {
         printf("%d ", v[i]);
@@ -28,14 +28,14 @@ void imprimeInverso(int v[], int n) {
 }
 
 int main() {
-    int vetor[10];
-    int tamanho = 10;
-    int limite = 50;
+    int vetor[5];
+    int tamanho = 5;
+    int limite = 100;
 
     preencheVetor(vetor, tamanho, limite);
 
-    imprimeDireto(vetor, tamanho);
-    imprimeInverso(vetor, tamanho);
+    ordemDireto(vetor, tamanho);
+    ordemInversa(vetor, tamanho);
 
     return 0;
 }
