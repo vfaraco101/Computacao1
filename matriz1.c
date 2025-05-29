@@ -4,7 +4,7 @@
 
 #define N 5
 
-void imprimirMatriz(int mat[N][N]) {
+void Matriz(int mat[N][N]) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             printf("%2d ", mat[i][j]);
@@ -31,12 +31,12 @@ int main() {
     }
 
     printf("Matriz original:\n");
-    imprimirMatriz(mat);
+    Matriz(mat);
 
     transposta(mat, matT);
 
     printf("\nMatriz transposta:\n");
-    imprimirMatriz(matT);
+    Matriz(matT);
 
     return 0;
 }
