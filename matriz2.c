@@ -12,7 +12,7 @@ int binomial(int n, int r) {
     if (r > n) return 0;
     return fatorial(n) / (fatorial(r) * fatorial(n - r));
 }
-void gerarTrianguloPascal(int n) {
+void Pascal(int n) {
     int mat[MAX_N][MAX_N] = {0};
     for (int i = 0; i < n; i++) {
         for (int j = 0; j <= i; j++) {
@@ -31,12 +31,12 @@ void gerarTrianguloPascal(int n) {
 }
 int main() {
     int n;
-    printf("Digite o número de linhas do triângulo de Pascal (1 a %d): ", MAX_N);
+    printf("Digite o numero de linhas do triangulo de Pascal (1 a %d): ", MAX_N);
     scanf("%d", &n);
     if (n < 1 || n > MAX_N) {
-        printf("Número de linhas inválido! Deve ser entre 1 e %d.\n", MAX_N);
+        printf("Número de linhas invalido! Deve ser entre 1 e %d.\n", MAX_N);
         return 1;
     }
-    gerarTrianguloPascal(n);
+    Pascal(n);
     return 0;
 }
