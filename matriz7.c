@@ -90,7 +90,7 @@ int main() {
         printf("(1) Imprimir as matrizes originais\n");
         printf("(2) Somar as duas matrizes e imprimir o resultado\n");
         printf("(3) Subtrair a primeira matriz da segunda e imprimir o resultado\n");
-        printf("(4) Multiplicar uma constante à primeira matriz e imprimir o resultado\n");
+        printf("(4) Multiplicar uma constante a primeira matriz e imprimir o resultado\n");
         printf("(5) Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
