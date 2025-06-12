@@ -55,9 +55,9 @@ int main() {
         ehMagico = false;
 
     if (ehMagico)
-        printf("A matriz e um quadrado mágico!\n");
+        printf("A matriz e um quadrado magico!\n");
     else
-        printf("A matriz nao e um quadrado mágico.\n");
+        printf("A matriz nao e um quadrado magico.\n");
 
     return 0;
 }
