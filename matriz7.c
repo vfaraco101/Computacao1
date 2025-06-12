@@ -54,7 +54,7 @@ void somarMatrizes() {
 
 void subtrairMatrizes() {
     if (!matrizesCriadas) {
-        printf("As matrizes ainda não foram criadas.\n");
+        printf("As matrizes ainda nao foram criadas.\n");
         return;
     }
     int sub[TAM][TAM];
