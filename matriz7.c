@@ -85,7 +85,7 @@ void multiplicarPorConstante() {
 int main() {
     int opcao;
     do {
-        printf("\nMenu de Opções:\n");
+        printf("\nMenu de Opcoes:\n");
         printf("(0) Criar duas matrizes 10x10 com valores inteiros\n");
         printf("(1) Imprimir as matrizes originais\n");
         printf("(2) Somar as duas matrizes e imprimir o resultado\n");
