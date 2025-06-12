@@ -11,7 +11,7 @@ int main ()
     for (i = 0; i < 3; i++)
     {
         printf("%d: ", i + 1);
-        fgets(nomes[i], sizeof(nomes[i]), stdin);
+        fgets(nomes[i], tamanho, stdin);
     }
     while (1)
     {
