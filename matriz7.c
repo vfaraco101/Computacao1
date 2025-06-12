@@ -32,7 +32,7 @@ void imprimirMatriz(int M[TAM][TAM], char nome) {
 
 void imprimirMatrizes() {
     if (!matrizesCriadas) {
-        printf("As matrizes ainda não foram criadas.\n");
+        printf("As matrizes ainda nao foram criadas.\n");
         return;
     }
     imprimirMatriz(A, 'A');
@@ -41,7 +41,7 @@ void imprimirMatrizes() {
 
 void somarMatrizes() {
     if (!matrizesCriadas) {
-        printf("As matrizes ainda não foram criadas.\n");
+        printf("As matrizes ainda nao foram criadas.\n");
         return;
     }
     int soma[TAM][TAM];
