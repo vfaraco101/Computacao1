@@ -7,7 +7,7 @@ int main() {
     int A[MAX][MAX];
     int n;
 
-    printf("Digite a ordem da matriz quadrada (máximo %d): ", MAX);
+    printf("Digite a ordem da matriz quadrada (maximo %d): ", MAX);
     scanf("%d", &n);
 
     if (n > MAX || n < 1) {
