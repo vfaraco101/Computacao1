@@ -92,7 +92,7 @@ int main() {
         printf("(3) Subtrair a primeira matriz da segunda e imprimir o resultado\n");
         printf("(4) Multiplicar uma constante à primeira matriz e imprimir o resultado\n");
         printf("(5) Sair\n");
-        printf("Escolha uma opção: ");
+        printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
 
         switch(opcao) {
@@ -102,7 +102,7 @@ int main() {
             case 3: subtrairMatrizes(); break;
             case 4: multiplicarPorConstante(); break;
             case 5: printf("Encerrando o programa.\n"); break;
-            default: printf("Opção inválida. Tente novamente.\n");
+            default: printf("Opcao invalida. Tente novamente.\n");
         }
     } while(opcao != 5);
 
