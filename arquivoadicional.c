@@ -47,7 +47,7 @@ int main()
         empresaslido[i][strcspn(empresaslido[i], "\n")] = '\0';
     }
     fclose(arquivo);
-    printf("\nNomes das empresas:\n");
+    printf("\nNome das empresas:\n");
     for (int i = 0; i < empresas_maximas; i++)
     {
         printf("%s\n", empresas[i]);
@@ -60,7 +60,7 @@ int main()
     }
     fclose(arquivo);
 
-    printf("\nNomes das empresas invertido:\n");
+    printf("\nNomes invertidos:\n");
     arquivo = fopen("nomes_invertidos.txt", "r");
     if (arquivo == NULL)
     {
