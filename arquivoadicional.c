@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define empresas_maximas 6
+#define EMPRESAS_MAXIMAS 6
 
 void inverterString(char str[])
 {
@@ -23,14 +23,14 @@ int main()
     FILE *arquivo;
 
     printf("Digite os nomes de 6 empresas:\n");
-    for (int i = 0; i < empresas_maximas; i++)
+    for (int i = 0; i < EMPRESAS_MAXIMAS; i++)
     {
         printf("Empresa %d: ", i + 1);
-        fgets(empresas[i], empresas[i], stdin);
+        fgets(empresas[i], 100, stdin);
         empresas[i][strcspn(empresas[i], "\n")] = '\0';
     }
     arquivo = fopen("empresas.txt", "w");
-    for (int i = 0; i < empresas_maximas; i++)
+    for (int i = 0; i < EMPRESAS_MAXIMAS; i++)
     {
         fprintf(arquivo, "%s\n", empresas[i]);
     }
@@ -41,19 +41,19 @@ int main()
         printf("Erro ao abrir o arquivo empresas.txt\n");
         return 1;
     }
-    for (int i = 0; i < empresas_maximas; i++)
+    for (int i = 0; i < EMPRESAS_MAXIMAS; i++)
     {
-        fgets(empresaslido[i], sizeof(empresaslido[i]), arquivo);
+        fgets(empresaslido[i], 100, arquivo);
         empresaslido[i][strcspn(empresaslido[i], "\n")] = '\0';
     }
     fclose(arquivo);
     printf("\nNome das empresas:\n");
-    for (int i = 0; i < empresas_maximas; i++)
+    for (int i = 0; i < EMPRESAS_MAXIMAS; i++)
     {
         printf("%s\n", empresas[i]);
     }
     arquivo = fopen("nomes_invertidos.txt", "w");
-    for (int i = 0; i < empresas_maximas; i++)
+    for (int i = 0; i < EMPRESAS_MAXIMAS; i++)
     {
         inverterString(empresaslido[i]);
         fprintf(arquivo, "%s\n", empresaslido[i]);
@@ -68,7 +68,7 @@ int main()
         return 1;
     }
     char linha[100];
-    while (fgets(linha, sizeof(linha), arquivo))
+    while (fgets(linha, 100, arquivo))
     {
         printf("%s", linha);
     }
